@@ -2,6 +2,6 @@ SOFT BULB STUDIOS — PORKBUN UPLOAD
 
 Upload the CONTENTS of this folder to the web root for softbulb.io.
 The index.html file must sit directly in the web root.
-Keep the assets, images, privacy, and support folders beside index.html.
+Keep the assets, images, games, consulting, about, privacy, and support folders beside index.html.
 
 Do not upload the source project, node_modules, or the dist folder.
