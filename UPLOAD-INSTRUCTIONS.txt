@@ -1,7 +1,19 @@
-SOFT BULB STUDIOS — PORKBUN UPLOAD
-
-Upload the CONTENTS of this folder to the web root for softbulb.io.
-The index.html file must sit directly in the web root.
-Keep the assets, images, games, consulting, about, privacy, and support folders beside index.html.
-
+SOFT BULB - PORKBUN UPLOAD
+
+Upload the CONTENTS of this folder to the web root for softbulb.io.
+The index.html file must sit directly in the web root.
+Keep the assets, images, games, consulting, about, privacy, and support
+folders beside index.html.
+Keep 404.html, robots.txt, and sitemap.xml in the web root as well.
+
+In the Porkbun hosting panel, set the custom error page to /404.html.
+
+Delete the previous upload first so the removed files do not linger:
+  - assets/*.js          (never referenced; the pages carry no script)
+  - .vite/manifest.json  (build metadata, should not be public)
+  - .assetsignore
+  - file.svg, globe.svg, window.svg
+  - images/the-fourth-sense.png, images/data-ai-consulting.png,
+    images/soft-bulb-logo-white.png
+
 Do not upload the source project, node_modules, or the dist folder.
