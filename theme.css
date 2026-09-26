@@ -28,3 +28,38 @@ h1,h2,h3{font-weight:650;letter-spacing:-.045em}
 .game-hero{gap:50px}.game-hero .actions{gap:12px}.game-hero .button{font-size:15px;padding:10px 18px}.contact-block{text-align:center;padding:75px 0}.contact-block h2{font-size:44px}.contact-block p{font-size:19px}.footer{max-width:1120px;font-size:13px;padding-top:24px}.article{margin-inline:auto}.article h1{font-size:56px}
 @media(max-width:1100px){.apple-intro h1{font-size:60px}.apple-tile h2,.apple-feature h2{font-size:38px}.feature-grid{padding:30px;gap:30px}.feature-copy h2{font-size:34px}.apple-service-list span{font-size:19px}}
 @media(max-width:760px){.site-header{height:60px}.brand{font-size:21px}.brand img{width:28px;height:28px}.mobile-menu nav{text-align:left}.apple-intro{padding:34px 22px 35px}.apple-intro h1{font-size:46px}.apple-intro .eyebrow{font-size:13px}.apple-intro>p:not(.eyebrow){font-size:18px}.apple-intro .actions{gap:18px}.apple-intro .text-link{font-size:16px}.apple-feature{padding:34px 20px 0}.apple-feature h2{font-size:34px}.apple-feature-copy>p:not(.eyebrow){font-size:21px}.apple-feature .status{font-size:13px}.apple-feature .actions{gap:10px}.apple-feature .button{font-size:15px;padding:10px 17px}.apple-game-art{margin:28px -20px 0;max-width:none}.apple-tiles{grid-template-columns:1fr;padding:12px 0}.apple-tile{padding:34px 22px 0;min-height:0}.apple-tile h2{font-size:38px}.apple-tile>p:not(.eyebrow){font-size:18px}.apple-service-list{margin-top:40px}.apple-service-list span{font-size:18px}.apple-baseball-art{max-width:280px}.apple-about{padding:55px 24px 62px}.apple-about h2{font-size:38px}.apple-about>p:not(.eyebrow){font-size:18px}.apple-about br{display:none}.page-intro{padding:42px 0}.page-intro h1{font-size:42px}.page-intro .lead{font-size:20px}.feature-grid{padding:24px 20px;margin-inline:-8px;gap:25px;border-radius:16px}.feature-copy h2{font-size:33px}.section{padding:45px 0}.section-heading{text-align:left;margin-bottom:30px}.section-heading h2{font-size:34px}.section-heading p{font-size:18px}.section-heading>.eyebrow{margin-bottom:16px}.process-grid{gap:30px}.blue-section{padding:48px 0}.contact-block{padding:48px 0}.contact-block h2{font-size:36px}.article h1{font-size:40px}.footer{padding:24px 0}.game-hero{gap:28px}.apple-service-list{gap:0 18px}}
+
+/* Shared light / dark control. Icons indicate the mode the button switches to. */
+:root{color-scheme:light}
+.site-header .nav{margin-left:auto}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;flex:none;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);cursor:pointer}
+.theme-toggle[hidden]{display:none}
+.theme-toggle:hover{background:#f5f5f7}
+.theme-sun{display:none}
+html[data-theme="dark"] .theme-moon{display:none}
+html[data-theme="dark"] .theme-sun{display:block}
+html[data-theme="dark"] .theme-toggle:hover{background:#202023}
+@media(max-width:760px){.site-header{gap:12px}.theme-toggle{margin-left:auto}.mobile-menu summary{padding-left:0}.mobile-menu summary:after{margin-left:6px}}
+@media(max-width:360px){.site-header{gap:8px}.site-header .brand{font-size:19px;gap:6px}.site-header .brand img{width:25px;height:25px}}
+
+/* Dark appearance, shared by every route. */
+html[data-theme="dark"]{color-scheme:dark;--paper:#080809;--ink:#f5f5f7;--muted:#a1a1a6;--line:#343437;--blue:#2997ff;--surface:#171719}
+html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] ::selection{background:#214f78;color:#fff}
+html[data-theme="dark"] .site-header{color:#e8e8ed}
+html[data-theme="dark"] .brand img{background:#f5f5f7;border-radius:8px;padding:3px}
+html[data-theme="dark"] .nav a:hover,html[data-theme="dark"] .mobile-menu nav a:hover{color:#64b5ff}
+html[data-theme="dark"] .apple-gate{background:var(--surface);box-shadow:inset 0 0 0 1px #2b2b2e;transition:background .2s,box-shadow .2s}
+html[data-theme="dark"] .apple-gate:hover{background:#202023;box-shadow:inset 0 0 0 1px #48484d}
+html[data-theme="dark"] .gate-icon,html[data-theme="dark"] .text-link{color:#64b5ff}
+html[data-theme="dark"] .gate-action,html[data-theme="dark"] .button,html[data-theme="dark"] .blue-section .button{background:#0071e3;border-color:#0071e3;color:#fff}
+html[data-theme="dark"] .apple-gate:hover .gate-action,html[data-theme="dark"] .button:hover,html[data-theme="dark"] .blue-section .button:hover{background:#0077ed;border-color:#0077ed}
+html[data-theme="dark"] .button.secondary{color:#64b5ff;border-color:#64b5ff;background:transparent}
+html[data-theme="dark"] .button.secondary:hover{background:#123250;border-color:#64b5ff;color:#f5f5f7}
+html[data-theme="dark"] .apple-intro,html[data-theme="dark"] .apple-systems,html[data-theme="dark"] .feature-grid,html[data-theme="dark"] .baseball-project,html[data-theme="dark"] .blue-section{background:var(--surface)}
+html[data-theme="dark"] .blue-section{color:var(--ink)}
+html[data-theme="dark"] .blue-section .eyebrow,html[data-theme="dark"] .blue-section p{color:var(--muted)}
+html[data-theme="dark"] .mobile-menu nav{background:#1c1c1e;border-color:#424245;box-shadow:0 12px 30px #0008;border-radius:14px}
+html[data-theme="dark"] .skip{background:#f5f5f7;color:#1d1d1f}
+html[data-theme="dark"] .footer{border-color:#2b2b2e}
+html[data-theme="dark"] a:focus-visible,html[data-theme="dark"] button:focus-visible,html[data-theme="dark"] summary:focus-visible{outline-color:#64b5ff}
