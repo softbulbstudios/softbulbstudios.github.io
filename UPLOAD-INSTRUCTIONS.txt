@@ -1,12 +1,27 @@
-SOFT BULB - PORKBUN UPLOAD
+SOFT BULB - UPLOAD
+
+This is a plain static site. There is nothing to build, compile, or
+publish. The files here ARE the website.
 
 Upload the CONTENTS of this folder to the web root for softbulb.io.
-The index.html file must sit directly in the web root.
-Keep the assets, images, games, consulting, about, privacy, and support
-folders beside index.html.
-Keep 404.html, robots.txt, and sitemap.xml in the web root as well.
+The index.html file must sit directly in the web root - not inside a
+folder. Keep the assets, images, games, consulting, about, privacy, and
+support folders beside index.html, along with 404.html, robots.txt,
+sitemap.xml, and the .nojekyll file.
 
-In the Porkbun hosting panel, set the custom error page to /404.html.
+IF YOU USE PORKBUN HOSTING
+  Upload via the file manager or FTP. The site is live the moment the
+  files finish uploading. Set the custom error page to /404.html.
+
+IF YOU USE GITHUB PAGES
+  Commit and push these files to the branch Pages is set to serve.
+  Pages redeploys on its own in a minute or two - there is no publish
+  button. The .nojekyll file above is required: without it Jekyll
+  deletes assets/_vinext_fonts (underscore folders are ignored) and the
+  site loses its fonts.
+
+EITHER WAY
+  Hard-refresh once (Ctrl+F5) before deciding something did not work.
 
 Delete the previous upload first so the removed files do not linger:
   - assets/*.js          (never referenced; the pages carry no script)
