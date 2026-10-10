@@ -1,6 +1,6 @@
 # Soft Bulb website
 
-The selected Apple-inspired design, with a homepage offering two equal gateways:
+The Soft Bulb website. Its homepage offers two equal gateways:
 Soft Bulb Studios (games) and Soft Bulb Systems (consulting).
 
 ## Open locally
