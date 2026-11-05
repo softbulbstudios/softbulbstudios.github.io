@@ -83,3 +83,25 @@ html[data-theme="dark"] a:focus-visible,html[data-theme="dark"] button:focus-vis
 html[data-theme="dark"] .card-banner{--card-ink:#171719;box-shadow:inset 0 0 0 1px #2b2b2e}
 @media(max-width:1100px){.card-banner{padding:56px 44px;gap:32px}.card-banner h2{font-size:56px}.card-banner-lead{font-size:20px}}
 @media(max-width:760px){.card-banner{grid-template-columns:1fr;gap:22px;margin:0 -8px 48px;padding:34px 24px 40px;border-radius:20px}.card-banner-art{order:-1}.card-banner-art svg{max-width:250px}.card-banner .eyebrow{font-size:14px;margin-bottom:12px}.card-banner h2{font-size:42px}.card-banner-lead{font-size:18px;margin-top:18px}.card-banner-facts li{font-size:16px}.card-banner .actions{margin-top:28px}.card-banner .button{font-size:16px;padding:12px 22px}}
+
+/* Current Baseball RPS title art and game communities. */
+.rps-artwork{position:relative;width:100%;aspect-ratio:1;overflow:hidden;border-radius:20px;background:#f2e8d7;isolation:isolate}
+.rps-artwork .rps-ballpark{position:absolute;inset:auto 0 0;width:100%;height:72%;object-fit:cover;object-position:center bottom;mask-image:linear-gradient(to bottom,transparent,#000 12%)}
+.rps-artwork .rps-wordmark{position:absolute;top:-2%;left:10%;width:80%;height:auto;z-index:1}
+.rps-artwork-compact{aspect-ratio:1.05}
+.rps-hero{grid-template-columns:1fr 1fr;align-items:center}
+.rps-community{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);align-items:center;gap:72px}
+.rps-character{width:100%;max-width:350px;border-radius:24px;justify-self:center}
+.rps-community h2{font-size:44px;line-height:1.08;margin:18px 0 22px}
+.rps-community p:not(.eyebrow){font-size:19px;color:var(--muted);max-width:500px}
+.sb-community-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.sb-community-grid h3{font-size:27px;line-height:1.2}
+.sb-community-grid p{color:var(--muted);margin:16px 0 0}
+.community-links{flex-wrap:wrap;gap:18px 26px}
+.footer{flex-wrap:wrap}
+.footer-social{display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px;width:100%;padding-top:18px;border-top:1px solid var(--line)}
+.footer-social>span{margin-right:auto}
+.footer-social .text-link{font-size:13px;min-height:32px}
+.footer-links{flex-wrap:wrap}
+@media(max-width:900px){.rps-community{gap:36px}.sb-community-grid{gap:32px}}
+@media(max-width:760px){.rps-hero,.rps-community,.sb-community-grid{grid-template-columns:1fr}.rps-artwork{border-radius:16px}.rps-community{gap:30px}.rps-character{max-width:270px}.rps-community h2{font-size:34px}.rps-community p:not(.eyebrow){font-size:18px}.footer-social{gap:8px 22px}.footer-social>span{width:100%;margin:0}.footer-social .text-link{min-height:40px}.section-label{gap:14px;align-items:flex-start}.section-label>span:last-child{text-align:right}}
