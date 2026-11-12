@@ -1,7 +1,6 @@
 # Soft Bulb website
 
-The Soft Bulb website. Its homepage offers two equal gateways:
-Soft Bulb Studios (games) and Soft Bulb Systems (consulting).
+The Soft Bulb Studios website: original, independent games.
 
 ## Open locally
 
@@ -14,7 +13,6 @@ All styles, fonts, images, and internal pages are included. No installation or b
 - Studios: `games/index.html`
 - The Fourth Sense Evolution: `games/fourth-sense/index.html`
 - Baseball RPS: `games/baseball-rps/index.html`
-- Systems: `consulting/index.html`
 - About and contact: `about/index.html`
 - Support: `support/index.html`
 - Privacy: `privacy/index.html`

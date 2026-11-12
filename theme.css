@@ -105,3 +105,4 @@ html[data-theme="dark"] .card-banner{--card-ink:#171719;box-shadow:inset 0 0 0 1
 .footer-links{flex-wrap:wrap}
 @media(max-width:900px){.rps-community{gap:36px}.sb-community-grid{gap:32px}}
 @media(max-width:760px){.rps-hero,.rps-community,.sb-community-grid{grid-template-columns:1fr}.rps-artwork{border-radius:16px}.rps-community{gap:30px}.rps-character{max-width:270px}.rps-community h2{font-size:34px}.rps-community p:not(.eyebrow){font-size:18px}.footer-social{gap:8px 22px}.footer-social>span{width:100%;margin:0}.footer-social .text-link{min-height:40px}.section-label{gap:14px;align-items:flex-start}.section-label>span:last-child{text-align:right}}
+.sb-gateways-single.wrap{grid-template-columns:minmax(0,560px);justify-content:center}
